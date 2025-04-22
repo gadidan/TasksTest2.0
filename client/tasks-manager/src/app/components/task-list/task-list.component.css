@@ -1,0 +1,48 @@
+.task-row {
+    padding: 0;
+    min-height: 56px;
+  }
+  
+  .row-content {
+    display: flex;
+    flex-wrap: nowrap;        /* 👈 prevent line breaks */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+    overflow: hidden;
+  }
+  
+  .col {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+  }
+  
+  .col.title {
+    font-weight: bold;
+    min-width: 150px;
+    max-width: 200px;
+  }
+  
+  .col.date {
+    font-family: monospace;
+    color: #666;
+    min-width: 100px;
+    max-width: 140px;
+  }
+  
+  .col.desc {
+    color: #888;
+    max-width: 300px;
+    flex-grow: 1;     /* fills the middle space */
+  }
+  
+  .col.actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    min-width: 100px;
+  }
+  
